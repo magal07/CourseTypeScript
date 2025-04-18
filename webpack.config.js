@@ -1,26 +1,26 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  mode: 'development',
-  entry: './src/A0019-exercicio/A0019-exercicio.ts',
+  mode: "development",
+  entry: "./src/A0019-exercicio/A0019-exercicio.ts",
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: 'ts-loader',
+        loader: "ts-loader",
         exclude: /node_modules/,
         options: {
-          configFile: 'tsconfig.frontend.json',
+          configFile: "tsconfig.frontend.json",
         },
       },
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: [".tsx", ".ts", ".js"],
   },
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'frontend', 'assets', 'js'),
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "frontend", "assets", "js"),
   },
-  devtool: 'source-map',
+  devtool: "source-map",
 };
