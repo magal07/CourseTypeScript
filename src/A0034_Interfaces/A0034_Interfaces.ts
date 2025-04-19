@@ -8,7 +8,7 @@ interface TypeFullName {
   fullName(): string;
 }
 
-type TypePerson = TypeName & TypeSurname & TypeFullName;
+// type TypePerson = TypeName & TypeSurname & TypeFullName;
 interface TypePerson2 extends TypeName, TypeSurname, TypeFullName {}
 
 class Person implements TypeName, TypeSurname, TypeFullName {
@@ -33,5 +33,4 @@ const personObj: TypePerson2 = {
 const person = new Person('Luiz', 'Miranda');
 console.log(person.fullName());
 console.log(personObj.fullName());
-
 export {};

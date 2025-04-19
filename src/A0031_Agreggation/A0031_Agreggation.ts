@@ -21,11 +21,11 @@ export class Product {
   ) {}
 }
 
-const product1 = new Product('Short', 49.9);
-const product2 = new Product('Pend', 9.9);
-const product3 = new Product('Pendrive', 4.9);
+// const product1 = new Product('Short', 49.9);
+// const product2 = new Product('Pend', 9.9);
+// const product3 = new Product('Pendrive', 4.9);
 
 const shopCart = new ShopCart();
-shopCart.insertProducts(product1, product2, product3);
+// shopCart.insertProducts(product1, product2, product3);
 console.log(shopCart.totalValue());
 console.log(shopCart.quantityProducts());

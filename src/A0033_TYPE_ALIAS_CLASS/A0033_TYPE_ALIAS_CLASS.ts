@@ -19,5 +19,5 @@ class Person implements TypeName, TypeSurname, TypeFullName {
   }
 }
 
-const person = new Person('Luiz', 'Miranda');
-console.log(person.fullName());
+// const person = new Person('Luiz', 'Miranda');
+// console.log(person.fullName());
