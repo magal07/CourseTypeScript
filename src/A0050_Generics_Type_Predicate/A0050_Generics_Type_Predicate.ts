@@ -12,6 +12,6 @@ export function sum<T>(...args: T[]): number | null {
   return result;
 }
 console.log(sum(1, 2, 3));
-console.log(sum(1, 2, 3, 'a'));
+// console.log(sum(1, 2, 3, 'a'));
 console.log(sum('a', 'b', 'c'));
-console.log(sum(...[1, 2, 3, 'a', 'b', 'c', 1]));
+// console.log(sum(...[1, 2, 3, 'a', 'b', 'c', 1]));
